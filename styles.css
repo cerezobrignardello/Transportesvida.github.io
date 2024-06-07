@@ -1,0 +1,201 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #44bd78;
+}
+
+.persona {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.persona img {
+    width: 100px;
+    /* ajustar el tamaño según sea necesario */
+    border-radius: 50%;
+    /* para hacer la imagen circular */
+    margin-right: 20px;
+}
+
+.descripcion {
+    flex-grow: 1;
+    /* para expandir el espacio restante */
+}
+
+.descripcion h3 {
+    margin-top: 0;
+    /* quitar el margen superior predeterminado */
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #25994b;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #35c76d;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section#quienes-somos {
+    background-color: #e6f7ff;
+}
+
+section#nuestros-vehiculos {
+    background-color: #cceeff;
+}
+
+section#contacto {
+    background-color: #b3e6ff;
+}
+
+h2 {
+    color: #0077aa;
+    margin-bottom: 40px;
+}
+
+.contenido h3 {
+    color: #005f7f;
+}
+
+.vehiculos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vehiculo {
+    width: 30%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.vehiculo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.vehiculo ul {
+    margin: 5px 0;
+    /* Ajusta el margen entre la descripción y el título del vehículo */
+    font-size: 14px;
+    /* Tamaño de fuente de la descripción */
+    color: #555;
+    /* Color del texto de la descripción */
+}
+
+.vehiculo:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.contactos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #08335B;
+    transition: transform 0.3s ease;
+}
+
+.contacto img {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: ;
+}
+
+.contacto:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #3da029;
+    color: rgb(55, 167, 79);
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .vehiculos {
+        flex-direction: column;
+        align-items: center;
+        /* Centrar los vehículos */
+    }
+
+    .vehiculo {
+        width: 80%;
+        /* Reducir el ancho para que quepan en pantallas pequeñas */
+        margin-bottom: 20px;
+        margin: 0 auto;
+        /* Establecer margen automático para centrar los vehículos */
+    }
+
+    .persona {
+        flex-direction: column;
+        /* Cambiar la dirección del flexbox a columna */
+        text-align: center;
+        /* Centrar el texto */
+    }
+
+    .persona img {
+        margin-bottom: 10px;
+        /* Añadir espacio entre la imagen y el texto */
+    }
+}
